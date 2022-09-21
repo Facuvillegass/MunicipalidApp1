@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>MunicipApp</title>
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-iYQeCzEYFbKjA/T2uDLTpkwGzCiq6soy8tYaI1GyVh/UjpbCx/TYkiZhlZB6+fzT"
+      crossorigin="anonymous"
+    />
+    <link rel="stylesheet" href="estilos.css" />
+  </head>
+  <body>
+    <form
+      class="text-center"
+      style="width: 85%; margin-left: auto; margin-right: auto; margin-top: 10%"
+      id="login-form"
+    >
+      <div class="mb-3">
+        <label for="exampleInputEmail1" class="form-label"
+          >Correo electrónico</label
+        >
+        <input
+          type="email"
+          class="form-control"
+          id="exampleInputEmail1"
+          aria-describedby="emailHelp"
+          name="email"
+          required
+        />
+      </div>
+      <div class="mb-3">
+        <label for="exampleInputPassword1" class="form-label">Password</label>
+        <input
+          type="password"
+          class="form-control"
+          id="exampleInputPassword1"
+          name="password"
+        />
+      </div>
+
+      <button type="submit" class="btn btn-primary">Ingresar</button>
+    </form>
+
+    <div style="text-align: center; margin-top: 20px">
+      <h4>No soy usuario todavía,</h4>
+      <a href="./formRegistro.html">
+        <button type="button" class="btn btn-primary" id="btnRegistrar">
+          ¡Me quiero registrar!
+        </button>
+      </a>
+    </div>
+
+    <script src="index.js" type="module"></script>
+    <script src="fire.js" type="module"></script>
+
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-u1OknCvxWvY5kfmNBILK2hRnQC3Pr17a+RTT6rIHI7NnikvbZlHgTPOOmMi466C8"
+      crossorigin="anonymous"
+    ></script>
+  </body>
+</html>

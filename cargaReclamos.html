@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>¡Bienvenido!</title>
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-iYQeCzEYFbKjA/T2uDLTpkwGzCiq6soy8tYaI1GyVh/UjpbCx/TYkiZhlZB6+fzT"
+      crossorigin="anonymous"
+    />
+    <link rel="stylesheet" href="estilos.css" />
+  </head>
+  <body>
+    <nav class="navbar navbar-expand-lg bg-light">
+      <div class="container-fluid">
+        <button id="btnInicio">MunicipApp</button>
+
+        <button
+          class="navbar-toggler"
+          type="button"
+          data-bs-toggle="collapse"
+          data-bs-target="#navbarSupportedContent"
+          aria-controls="navbarSupportedContent"
+          aria-expanded="false"
+          aria-label="Toggle navigation"
+        >
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+          <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+            <!-- Redirección a WhatsApp -->
+            <li class="nav-item">
+              <a class="nav-link" href="./contactanos.html">Contactanos</a>
+            </li>
+            <!-- Redirección a páginas de pagos municipales -->
+            <li class="nav-item">
+              <a class="nav-link" href="./realizaTusPagos.html"
+                >Realizá tus pagos</a
+              >
+            </li>
+            <!-- Redirección a portal de reclamos -->
+            <li class="nav-item">
+              <a class="nav-link" href="#">Cargá y seguí tus reclamos</a>
+            </li>
+            <!-- Redirección a portal de gestión -->
+            <li class="nav-item">
+              <a class="nav-link" href="#">Portal de gestión</a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+
+    <main>
+      <div style="text-align: center; margin-top: 30px; margin-bottom: 20px">
+        <h3>Carga tu reclamo</h3>
+      </div>
+      <form
+        id="form"
+        style="
+          text-align: center;
+          width: 80%;
+          margin-right: auto;
+          margin-left: auto;
+        "
+      >
+        <input
+          type="text"
+          placeholder="Ingrese el título de reclamo"
+          name="tituloReclamo"
+        />
+        <br />
+        <br />
+        <label for="Categoría de reclamo">
+          Ingrese la categoría a la que pertenece su reclamo:
+          <select name="categoriasReclamo" id="categoriasReclamo">
+            <option value="Alumbrado">Alumbrado</option>
+            <option value="Seguridad">Seguridad</option>
+            <option value="Calles">Calles</option>
+          </select>
+        </label>
+        <br />
+        <br />
+        <label>
+          Carga una imagen que represente tu reclamo!
+          <input type="file" name="imagenReclamo" id="imagenReclamo" />
+        </label>
+        <br />
+        <br />
+        <label>
+          Queremos obtener la ubicación del reclamo, si estás en el lugar,
+          presiona aquí!
+          <button type="button" id="btnUbicacion">Obtener ubicación</button>
+        </label>
+        <br />
+        <br />
+        <button type="submit">Enviar formulario</button>
+      </form>
+    </main>
+
+    <script src="cargaReclamos.js" type="module"></script>
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-u1OknCvxWvY5kfmNBILK2hRnQC3Pr17a+RTT6rIHI7NnikvbZlHgTPOOmMi466C8"
+      crossorigin="anonymous"
+    ></script>
+  </body>
+</html>
